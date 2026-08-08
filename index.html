@@ -213,7 +213,7 @@
 <header>
   <h1>Tesla Robotaxi / Cybercab Deployment Tracker</h1>
   <div class="sub">City-by-city status of the robotaxi rollout, plus the unit economics of the four rideshare models — built for a quick periodic status check.</div>
-  <span class="asof">Data as of <b>&nbsp;August 2, 2026&nbsp;</b> · v2.3</span>
+  <span class="asof">Data as of <b>&nbsp;August 8, 2026&nbsp;</b> · v2.4</span>
 </header>
 
 <section>
@@ -267,7 +267,7 @@
   <h2>Upcoming Catalysts</h2>
   <div class="cat"><ul>
     <li><b>Phoenix launch.</b> All permits in hand + first-responder plan filed Jun 2026 covering 9 municipalities; ~60 cars staged. Q2 release (Jul 22) reiterates "preparations are underway" — closest of the un-launched markets.</li>
-    <li><b>Nevada NTA permit decision.</b> Application (up to 5,000 vehicles, Las Vegas + both airports) — public comment closed Jul 5; NTA staff review ongoing, still no decision as of Jul 26. Approval unlocks the biggest single authorized fleet; Q2 release names Las Vegas alongside Phoenix as preparation markets.</li>
+    <li><b>Nevada NTA permit decision.</b> Application (up to 5,000 vehicles, Las Vegas + both airports) — public comment closed Jul 5; NTA staff review ongoing, still no decision as of Aug 8 (five weeks post-comment). Approval unlocks the biggest single authorized fleet; Q2 release names Las Vegas alongside Phoenix as preparation markets. Competitive clock ticking: Zoox begins commercial paid rides in Las Vegas Aug 10 (per ChargePort tracker) — a second driverless operator live on the Strip before Tesla's permit clears.</li>
     <li><b>Cybercab → first paying rider (timeline pushed).</b> Q2 call (Jul 22) confirms production has begun at Giga Texas with employee rides on the campus since July — but Tesla <b>removed its "volume production in 2026" guidance</b>, tying the scale ramp to 4680 battery-cell output and giving no new date. Austin still the first city likely to hit 10/10, but on a later clock.</li>
     <li><b>Q3 2026 earnings call (late Oct).</b> Q2 (Jul 22) did disclose cumulative paid miles (~2.4–2.5M via a deck chart — see hard data) but still no robotaxi revenue breakout, no cost-per-mile, and no remote-operator disclosure. Q3 is the test of Musk's ">10%/week" growth claim — Q2's quarterly adds were flat vs Q1 (~900k each per Electrek's chart read).</li>
     <li><b>FSD v15 scaling.</b> Per the Q2 call, the robotaxi fleet is <b>already running FSD v15</b> ("7 major track improvements over v14") — yet active fleets stayed tiny through Q2, so software readiness is no longer the stated bottleneck; watch whether fleet counts actually grow. Musk also floated rolling out "to entire states" rather than city-by-city; AI5 hardware volume production "hopefully next year".</li>
@@ -763,6 +763,7 @@ const CITIES = [
 ];
 
 const CHANGELOG = [
+  ["2026-08-08", "v2.4 — Weekly refresh. <b>Another quiet week — no milestone moved, Deployment Index flat at 85.5</b> for the fourth straight refresh. Still no Phoenix launch and no Nevada NTA decision (now five weeks past the Jul 5 comment close); Cybercab lot count holds at 245 with no new drone survey; no new city sightings, no Tesla disclosures, no geofence expansions reported. Fleet picture unchanged per ChargePort's Aug 1 update: ~20–42 active driverless Teslas in Texas vs Waymo's ~3,500-car fleet at ~500k rides/wk (Waymo now lists 11 US metros incl. Nashville). One competitive marker added to the Vegas catalyst: <b>Zoox begins commercial paid rides in Las Vegas Aug 10</b> — a second driverless operator goes revenue-live on the Strip while Tesla's 5,000-vehicle permit sits in staff review. No unit-economics changes — no new disclosures."],
   ["2026-08-02", "v2.3 — Weekly refresh. <b>Quietest week yet — no milestone moved, Deployment Index flat at 85.5</b> for the third straight refresh. No Phoenix launch, no Nevada NTA decision (still under staff review), no new Cybercab lot count (holds at 245), Austin fleet still stalled ~17-20 cars. The one notable development is regulatory, not operational: in New Jersey, <b>Uber is pushing its own amendment</b> to the pending AV pilot bill (the S1677 fight already on our Watchlist) requiring human drivers on ≥85% of rides in any AV pilot — which would force Tesla and Waymo to route rides through Uber's own app instead of operating independently — plus a LiDAR+radar sensor mandate that would exclude Tesla's camera-only cars outright (reported Jul 25). Added as a new Upcoming Catalyst and folded into the NJ watchlist pill; first real look at the state-by-state regulatory friction robotaxis will hit outside permissive TX/FL/AZ. Minor items skipped as immaterial: Tesla removed blinker/hazard cabin sounds (Jul 28) and is testing a new in-cabin recording feature (Jul 29). Waymo holds ~500k rides/wk on a fleet now sized ~3,500 (thechargeport.com), still no independent-app plans before its Uber contract lapses Jan 2028. No unit-economics changes — no new disclosures."],
   ["2026-07-26", "v2.2 — Weekly refresh. A quiet post-earnings week: <b>no milestone moved — Deployment Index flat at 85.5</b> (a flat line is information). What did land: Tesla AI chief Ashok Elluswamy quantified the safety record — <b>380k cumulative unsupervised miles across the 6 driverless cities, 'zero notable incidents'</b> (Jul 23, from the Q2 deck follow-ups; added to the Network Snapshot); Bay Area detail updated — <b>SFO pickups/drop-offs went live Jul 21</b> under the limo permit (was 'pending' on this page; no score change, the airport milestone was already credited); and Tesla posted <b>AI Safety Operator jobs in Colombia (Bogotá) and Chile (Las Condes)</b> — its 20th robotaxi-hiring country, validation-phase only (new international watchlist pill, Jul 24). Still waiting: no Phoenix launch, no Nevada NTA decision (review ongoing 3 weeks after comment closed), Cybercab lot count unchanged at 245, Austin fleet still ~17, Waymo steady at ~500k rides/wk. No unit-economics changes — no new disclosures."],
   ["2026-07-23", "v2.1 — <b>New: the '10% a Week' chart</b> (bottom of page). On the Q2 call Musk said Robotaxi will 'continue to scale… more than 10% a week <b>in terms of miles driven</b>' (per the <a href='https://news.alphastreet.com/tesla-inc-tsla-q2-2026-earnings-call-transcript/'>call transcript</a>). The new chart plots the actual weekly paid-mile run-rate derived from Tesla's own cumulative disclosures (22k → 88k → 54k mi/wk over the last three periods) against that claim compounded from a ~60k mi/wk base through Dec 31: it implies ~545k mi/wk (~9×) and ~7.3M cumulative paid miles by year-end — vs ~2.45M today, and still ~14% of Waymo's current weekly autonomous miles. Q3's disclosure (~4.4M+ cumulative implied by late Oct) is the test. Chart renderer gains dashed-line support for projections. No milestone moves; Deployment Index holds 85.5; no post-call news (no Phoenix launch, no NV NTA decision) as of today."],
@@ -826,35 +827,35 @@ const HISTORY = {
   index: {
     title: "Deployment Index", sub: "Sum of all 19 city scores (max 190) · pre-Jul-2026 retro-estimated", unit: "",
     series: [{ name: "Index", color: "var(--seq-450)", step: false, data: [
-      ["2025-06-22", 15], ["2025-09-30", 25], ["2025-12-31", 40], ["2026-03-31", 60], ["2026-07-18", 76.5], ["2026-07-19", 76.5], ["2026-07-21", 85.5], ["2026-07-22", 85.5], ["2026-07-23", 85.5], ["2026-07-26", 85.5], ["2026-08-02", 85.5]
+      ["2025-06-22", 15], ["2025-09-30", 25], ["2025-12-31", 40], ["2026-03-31", 60], ["2026-07-18", 76.5], ["2026-07-19", 76.5], ["2026-07-21", 85.5], ["2026-07-22", 85.5], ["2026-07-23", 85.5], ["2026-07-26", 85.5], ["2026-08-02", 85.5], ["2026-08-08", 85.5]
     ]}]
   },
   paidMiles: {
     title: "Cumulative Paid Robotaxi Miles", sub: "Tesla quarterly disclosures", unit: "M",
     series: [{ name: "Paid miles", color: "var(--seq-450)", step: false, data: [
-      ["2025-06-22", 0], ["2025-12-31", 0.61], ["2026-03-31", 1.75], ["2026-07-19", 1.75], ["2026-07-21", 1.75], ["2026-07-22", 2.45], ["2026-07-23", 2.45], ["2026-07-26", 2.45], ["2026-08-02", 2.45]
+      ["2025-06-22", 0], ["2025-12-31", 0.61], ["2026-03-31", 1.75], ["2026-07-19", 1.75], ["2026-07-21", 1.75], ["2026-07-22", 2.45], ["2026-07-23", 2.45], ["2026-07-26", 2.45], ["2026-08-02", 2.45], ["2026-08-08", 2.45]
     ]}]
   },
   cybercabs: {
     title: "Cybercabs Observed", sub: "Giga Texas lot counts (drone surveys) — staged units in Dallas/Miami/Vegas add ~80 more", unit: "",
     series: [{ name: "Cybercabs", color: "var(--seq-450)", step: false, data: [
-      ["2026-02-17", 1], ["2026-03-05", 25], ["2026-03-25", 36], ["2026-05-23", 60], ["2026-06-14", 85], ["2026-06-15", 102], ["2026-07-11", 110], ["2026-07-19", 110], ["2026-07-21", 245], ["2026-07-22", 245], ["2026-07-23", 245], ["2026-07-26", 245], ["2026-08-02", 245]
+      ["2026-02-17", 1], ["2026-03-05", 25], ["2026-03-25", 36], ["2026-05-23", 60], ["2026-06-14", 85], ["2026-06-15", 102], ["2026-07-11", 110], ["2026-07-19", 110], ["2026-07-21", 245], ["2026-07-22", 245], ["2026-07-23", 245], ["2026-07-26", 245], ["2026-08-02", 245], ["2026-08-08", 245]
     ]}]
   },
   liveMarkets: {
     title: "Live Markets", sub: "Cities with public paid service", unit: "",
     series: [{ name: "Markets", color: "var(--seq-450)", step: true, data: [
-      ["2025-06-22", 1], ["2025-07-30", 2], ["2026-04-18", 4], ["2026-07-03", 5], ["2026-07-18", 5], ["2026-07-19", 5], ["2026-07-21", 7], ["2026-07-22", 7], ["2026-07-23", 7], ["2026-07-26", 7], ["2026-08-02", 7]
+      ["2025-06-22", 1], ["2025-07-30", 2], ["2026-04-18", 4], ["2026-07-03", 5], ["2026-07-18", 5], ["2026-07-19", 5], ["2026-07-21", 7], ["2026-07-22", 7], ["2026-07-23", 7], ["2026-07-26", 7], ["2026-08-02", 7], ["2026-08-08", 7]
     ]}]
   },
   rides: {
     title: "Weekly Rides — Tesla vs Waymo", sub: "Waymo disclosed · Tesla estimated from paid-mile disclosures (~5 mi/ride)", unit: "",
     series: [
       { name: "Waymo", color: "#008300", step: false, data: [
-        ["2025-04-30", 250000], ["2025-12-15", 450000], ["2026-07-08", 500000], ["2026-07-19", 500000], ["2026-07-21", 500000], ["2026-07-22", 500000], ["2026-07-23", 500000], ["2026-07-26", 500000], ["2026-08-02", 500000]
+        ["2025-04-30", 250000], ["2025-12-15", 450000], ["2026-07-08", 500000], ["2026-07-19", 500000], ["2026-07-21", 500000], ["2026-07-22", 500000], ["2026-07-23", 500000], ["2026-07-26", 500000], ["2026-08-02", 500000], ["2026-08-08", 500000]
       ]},
       { name: "Tesla (est.)", color: "var(--seq-450)", step: false, data: [
-        ["2025-09-30", 4000], ["2025-12-31", 7000], ["2026-03-31", 17000], ["2026-07-18", 20000], ["2026-07-19", 20000], ["2026-07-21", 20000], ["2026-07-22", 20000], ["2026-07-23", 20000], ["2026-07-26", 20000], ["2026-08-02", 20000]
+        ["2025-09-30", 4000], ["2025-12-31", 7000], ["2026-03-31", 17000], ["2026-07-18", 20000], ["2026-07-19", 20000], ["2026-07-21", 20000], ["2026-07-22", 20000], ["2026-07-23", 20000], ["2026-07-26", 20000], ["2026-08-02", 20000], ["2026-08-08", 20000]
       ]}
     ]
   }
