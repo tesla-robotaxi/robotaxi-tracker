@@ -212,12 +212,11 @@
 
 <header>
   <h1>Tesla Robotaxi / Cybercab Deployment Tracker</h1>
-  <div class="sub">City-by-city status of the robotaxi rollout, plus the unit economics of the four rideshare models — built for a quick periodic status check.</div>
-  <span class="asof">Data as of <b>&nbsp;August 20, 2026&nbsp;</b> · v2.8</span>
+  <span class="asof">Data as of <b>&nbsp;August 20, 2026&nbsp;</b> · v2.9</span>
 </header>
 
 <section>
-  <h2>City Leaderboard <span class="hint">the bottom line — scored 0–10 on the launch milestones explained below · click any row for detail &amp; sources</span></h2>
+  <h2>City Leaderboard</h2>
   <div class="tablecard">
     <table id="tbl">
       <thead>
@@ -764,6 +763,7 @@ const CITIES = [
 ];
 
 const CHANGELOG = [
+  ["2026-08-20", "v2.9 — Dropped two obvious header hints (page subtitle and City Leaderboard explainer). No data or score changes; Deployment Index holds 86.0."],
   ["2026-08-20", "v2.8 — Dropped the live '10% a week' claim: removed the extrapolation chart and cleaned the Q3 catalyst + paid-miles tile. Q2 paid-miles facts stay (cumulative ~2.45M; Q2 adds flat vs Q1). No milestone moved; Deployment Index holds 86.0."],
   ["2026-08-20", "v2.7 — Unit-econ caption corrections only (no number changes). Uber card/method now match the base row: driver take-home $1.25 (~48% of $2.60), platform $0.36 (~14%) — the old ~55% / ~28% tags were leftover industry averages that did not match this model. Waymo bull fare label no longer calls $3.90 '+12.7% over Uber': $19.69 vs $17.47 is a per-trip premium; $3.90 is $19.69 on a ~5-mi trip, while +12.7% per mile would be ~$2.93–$3.03 on Uber's 6.5-mi trip. No milestone moved; Deployment Index holds 86.0."],
   ["2026-08-20", "v2.6 — Weekly refresh. <b>No milestone moved — Deployment Index flat at 86.0</b>. The Information (Aug 17) reports Tesla targeting a Cybercab public launch in Austin by end of August: employee rides on public roads first, then fold into the existing Austin robotaxi service a few days later (timeline can slip). Official launch event is in Austin (Tesla event page via NotATeslaApp Aug 19): 5 winners, sweepstakes 8/17–8/23, winners 8/25, mail-in entry; no event date published. Employee public-road passenger rides are planned, not confirmed started. <b>Still 0 Cybercabs in revenue service</b> — TX filing (FSD Database, Aug 20) lists Tesla Robotaxi LLC at 186 × 2026 Model Y and 0 Cybercabs. City permits for a charging hub at 405 E St. Elmo Rd (Phase 1 ~48 Superchargers; Phase 2 drawings note 80 wireless chargers / Tesla Auto Cab) — infrastructure only, not a live depot. Zoox paid Strip service confirmed live Aug 10 (100-vehicle cap; airport still test-only); Tesla Vegas still permitted-not-live (ChargePort Aug 19). No Phoenix launch. Cybercab lot count holds at 245; paid miles still ~2.45M; live markets 7; Waymo ~500k rides/wk. No unit-economics changes."],
